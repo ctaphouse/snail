@@ -12,7 +12,7 @@ public class SnailContext : DbContext
 
     public DbSet<Course>? Courses { get; set; }
     public DbSet<Department>? Departments { get; set; }
-    public DbSet<Student>? Students { get; set; }
+    public DbSet<Student> Students => Set<Student>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

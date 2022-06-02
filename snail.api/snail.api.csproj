@@ -7,12 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ardalis.apiendpoints" Version="4.0.1" />
     <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="6.0.5" />
     <PackageReference Include="microsoft.entityframeworkcore.tools" Version="6.0.5">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\snail.shared\snail.shared.csproj" />
   </ItemGroup>
 
 </Project>
