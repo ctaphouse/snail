@@ -6,7 +6,7 @@ using snail.shared.Features.Home.Shared;
 
 namespace snail.api.Features.Home;
 
-public class GetStudentsEndpoint : EndpointBaseAsync.WithRequest<GetStudentsRequest>.WithActionResult<GetStudentsRequest.Response>
+public class GetStudentsEndpoint : EndpointBaseAsync.WithRequest<int>.WithActionResult<GetStudentsRequest.Response>
 {
     private readonly SnailContext _context;
 
@@ -16,7 +16,7 @@ public class GetStudentsEndpoint : EndpointBaseAsync.WithRequest<GetStudentsRequ
     }
 
     [HttpGet(GetStudentsRequest.RouteTemplate)]
-    public override async Task<ActionResult<GetStudentsRequest.Response>> HandleAsync(GetStudentsRequest request, CancellationToken cancellationToken = default)
+    public override async Task<ActionResult<GetStudentsRequest.Response>> HandleAsync(int request, CancellationToken cancellationToken = default)
     {
         var students = await _context.Students.ToListAsync(cancellationToken);
 

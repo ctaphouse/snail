@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "snail.api", "snail.api\snai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "snail.shared", "snail.shared\snail.shared.csproj", "{786677DF-DAD8-4FFE-BA7D-420785F7D5D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "snail.client", "snail.client\snail.client.csproj", "{1269108C-073F-4589-ABC9-46CB7D8FEDBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{786677DF-DAD8-4FFE-BA7D-420785F7D5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{786677DF-DAD8-4FFE-BA7D-420785F7D5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{786677DF-DAD8-4FFE-BA7D-420785F7D5D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1269108C-073F-4589-ABC9-46CB7D8FEDBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1269108C-073F-4589-ABC9-46CB7D8FEDBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1269108C-073F-4589-ABC9-46CB7D8FEDBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1269108C-073F-4589-ABC9-46CB7D8FEDBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
