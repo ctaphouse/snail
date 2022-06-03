@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\snail.shared\snail.shared.csproj" />
+    <ProjectReference Include="..\snail.client\snail.client.csproj" />
   </ItemGroup>
 
 </Project>
