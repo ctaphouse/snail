@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using snail.api.Persistence;
 using snail.shared.Features.Home.Shared;
 
-namespace snail.api.Features.Home;
+namespace snail.api.Features.Home.Shared;
 
-public class GetStudentsEndpoint : EndpointBaseAsync.WithRequest<int>.WithActionResult<GetStudentsRequest.Response>
+public class GetStudentsEndpoint : EndpointBaseAsync.WithoutRequest.WithActionResult<GetStudentsRequest.Response>
 {
     private readonly SnailContext _context;
 
@@ -16,7 +16,7 @@ public class GetStudentsEndpoint : EndpointBaseAsync.WithRequest<int>.WithAction
     }
 
     [HttpGet(GetStudentsRequest.RouteTemplate)]
-    public override async Task<ActionResult<GetStudentsRequest.Response>> HandleAsync(int request, CancellationToken cancellationToken = default)
+    public override async Task<ActionResult<GetStudentsRequest.Response>> HandleAsync(CancellationToken cancellationToken = default)
     {
         var students = await _context.Students.ToListAsync(cancellationToken);
 
